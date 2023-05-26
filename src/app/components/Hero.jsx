@@ -24,10 +24,10 @@ const Hero = () => {
               tomorrow.
             </p>
             <div className="mt-10">
-              <button className="border bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold py-2 px-4 rounded-3xl  lg:text-sm">
-                Apply Now
+              <button className=" bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold py-2 px-4 rounded-3xl  lg:text-sm">
+                Enrol Now
               </button>
-              <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl ml-8 lg:text-sm">
+              <button className=" bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl ml-8 lg:text-sm">
                 View all courses
               </button>
             </div>

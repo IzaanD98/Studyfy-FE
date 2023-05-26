@@ -4,6 +4,8 @@ import Head from "next/head";
 import Hero from "../src/app/components/Hero";
 import Why from "../src/app/components/Why";
 import CoursesSelection from "../src/app/components/CoursesSelection";
+import Testimonials from "../src/app/components/Testimonials";
+import Footer from "../src/app/components/Footer";
 export default function Home() {
   return (
     <div>
@@ -17,6 +19,8 @@ export default function Home() {
           <Hero />
           <Why />
           <CoursesSelection />
+          <Testimonials />
+          <Footer />
         </section>
       </main>
     </div>

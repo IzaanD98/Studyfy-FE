@@ -23,32 +23,32 @@ const Why = () => {
       </div>
 
       <div className="max-w-4xl mx-auto grid grid-cols-2 gap-4">
-        <div className="bg-gray-100 rounded-lg p-4">
+        <div className="bg-gray-100 rounded-3xl p-4">
           <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
             Trending Courses{" "}
           </h2>
-          <FaUniversity size={32} />
+          <FaUniversity size={32} className="text-blue-800" />
           <p className="text-xl text-left py-5 text-gray-800">
             Business Management (level 4), Health and Social Care (level 4) and
             more...
           </p>
         </div>
 
-        <div className="bg-gray-100 rounded-lg p-4 ">
+        <div className="bg-gray-100 rounded-3xl p-4 ">
           <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
             Free Consultation{" "}
           </h2>
-          <FaHandsHelping size={32} />
+          <FaHandsHelping size={32} className="text-blue-800" />
           <p className="text-xl text-left py-5 text-gray-800">
             Assistance with finding and applying to the perfect course for you.
           </p>
         </div>
 
-        <div className="bg-gray-100 rounded-lg p-4">
+        <div className="bg-gray-100 rounded-3xl p-4">
           <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
             Student Loans{" "}
           </h2>
-          <FaMoneyBillWave size={28} />
+          <FaMoneyBillWave size={28} className="text-blue-800" />
 
           <p className="text-xl text-left py-5 text-gray-800">
             Benefit from financial help and support for various funds and
@@ -56,11 +56,11 @@ const Why = () => {
           </p>
         </div>
 
-        <div className="bg-gray-100 rounded-lg p-4">
+        <div className="bg-gray-100 rounded-3xl p-4">
           <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
             Institutions{" "}
           </h2>
-          <FaBuilding size={32} />
+          <FaBuilding size={28} className="text-blue-800" />
 
           <p className="text-xl text-left py-5 text-gray-800">
             Eligibility for financial support through ‘Student Finance England’.

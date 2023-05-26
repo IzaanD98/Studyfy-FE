@@ -20,13 +20,21 @@ const Navbar = () => {
         className="max-w-full sm:max-w-200"
       />
       <ul className="hidden lg:flex text-blue-800 ">
-        <li className="p-4 hover:text-purple-400 duration-500 ">Home</li>
-        <li className="p-4 hover:text-purple-400 duration-500">Courses</li>
-        <li className="p-4 hover:text-purple-400 duration-500">
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
+          Home
+        </li>
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
+          Courses
+        </li>
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
           Financial Support
         </li>
-        <li className="p-4 hover:text-purple-400 duration-500">About Us</li>
-        <li className="p-4 hover:text-purple-400 duration-500">Contact Us</li>
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
+          About Us
+        </li>
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
+          Contact Us
+        </li>
         <li className="p-4">
           {" "}
           <button
@@ -55,19 +63,19 @@ const Navbar = () => {
           className="max-w-full sm:max-w-200 rounded-2xl "
         />
         <ul className="p-4">
-          <li className="p-4 border-b hover:text-purple-400 duration-500">
+          <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             Home
           </li>
-          <li className="p-4 border-b hover:text-purple-400 duration-500">
+          <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             Courses
           </li>
-          <li className="p-4 border-b hover:text-purple-400 duration-500">
+          <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             Financial Support
           </li>
-          <li className="p-4 border-b hover:text-purple-400 duration-500">
+          <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             About Us
           </li>
-          <li className="p-4 border-b hover:text-purple-400 duration-500">
+          <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             Contact Us
           </li>
           <li className="p-4">

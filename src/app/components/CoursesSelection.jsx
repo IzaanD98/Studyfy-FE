@@ -17,7 +17,7 @@ const CoursesSelection = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="bg-gray-100 rounded-lg p-4 ">
           <img
             className="rounded-3xl"
@@ -32,8 +32,7 @@ const CoursesSelection = () => {
             Duration: <span className="float-right">4 years</span>
           </p>
           <p className="text-md font-bold  text-left pb-5 text-gray-800">
-            Start date:{" "}
-            <span className="float-right">October, September 2023</span>
+            Start date: <span className="float-right">Oct, Sept & June</span>
           </p>
           <div className="flex flex-col justify-center items-center">
             <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm ">
@@ -56,8 +55,7 @@ const CoursesSelection = () => {
             Duration: <span className="float-right">4 years</span>
           </p>
           <p className="text-md font-bold  text-left pb-5 text-gray-800">
-            Start date:{" "}
-            <span className="float-right">October, September 2023</span>
+            Start date: <span className="float-right">Oct, Sept & June</span>
           </p>
           <div className="flex flex-col justify-center items-center">
             <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm ">
@@ -80,15 +78,19 @@ const CoursesSelection = () => {
             Duration: <span className="float-right">4 years</span>
           </p>
           <p className="text-md font-bold  text-left pb-5 text-gray-800">
-            Start date:{" "}
-            <span className="float-right">October, September 2023</span>
+            Start date: <span className="float-right">Oct, Sept & June</span>
           </p>
           <div className="flex flex-col justify-center items-center">
-            <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm ">
+            <button className=" border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
               Read More
             </button>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center items-center mt-10">
+        <button className=" border bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
+          View All Courses
+        </button>
       </div>
     </div>
   );
