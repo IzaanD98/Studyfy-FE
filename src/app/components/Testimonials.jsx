@@ -24,13 +24,13 @@ const Testimonials = () => {
             className="rounded-3xl"
           />
           <p className="text-xl text-left py-5 text-gray-800">
-            "The staff at Studyfy provided invaluable guidance and support
+            &quot;The staff at Studyfy provided invaluable guidance and support
             throughout my university application process. They offered
             insightful advice, shared valuable interview tips, and demonstrated
-            exceptional competence. Whether you're aiming for admission into a
-            prestigious university or simply seeking clarification on your
-            educational path, Studyfy is the ideal place to receive the
-            assistance you need."
+            exceptional competence. Whether you&apos;re aiming for admission
+            into a prestigious university or simply seeking clarification on
+            your educational path, Studyfy is the ideal place to receive the
+            assistance you need.&quot;
           </p>
           <p>Juan Kumar</p>
         </div>
@@ -44,14 +44,15 @@ const Testimonials = () => {
             className="rounded-3xl"
           />
           <p className="text-xl text-left py-5 text-gray-800">
-            "A friend recommended Studyfy to me, so I decided to pay them a
-            visit. I had the pleasure of meeting Mihaela, who proved to be
+            &quot;A friend recommended Studyfy to me, so I decided to pay them a
+            visit. I had the pleasure of meeting Katy, who proved to be
             incredibly helpful and knowledgeable. She provided me with clear and
             detailed information about the University of Sunderland,
             internships, and the various possibilities for career development.
-            Ted's friendly nature and reliable guidance left a strong impression
-            on me. If you're looking for a place to clarify your doubts or get
-            assistance with university admissions, I highly recommend Studyfy."
+            Ted&apos;s friendly nature and reliable guidance left a strong
+            impression on me. If you&apos;re looking for a place to clarify your
+            doubts or get assistance with university admissions, I highly
+            recommend Studyfy.&quot;
           </p>
           <p>Kate Hopkins</p>
         </div>
@@ -65,13 +66,13 @@ const Testimonials = () => {
             className="rounded-3xl"
           />
           <p className="text-xl text-left py-5 text-gray-800">
-            "I had an exceptional experience at Studyfy! The environment was
-            incredibly professional, and they efficiently handled all the
-            necessary arrangements within just one week. If you're interested in
-            pursuing your university education here in the UK, I highly
-            recommend giving Studyfy a try. Their expertise and dedication will
-            ensure a smooth and successful journey towards your educational
-            goals."
+            &quot;I had an exceptional experience at Studyfy! The environment
+            was incredibly professional, and they efficiently handled all the
+            necessary arrangements within just one week. If you&apos;re
+            interested in pursuing your university education here in the UK, I
+            highly recommend giving Studyfy a try. Their expertise and
+            dedication will ensure a smooth and successful journey towards your
+            educational goals.&quot;
           </p>
           <p>Joe Oregan</p>
         </div>
@@ -86,13 +87,13 @@ const Testimonials = () => {
           />
 
           <p className="text-xl text-left py-5 text-gray-800">
-            "I had a fantastic experience with Studyfy! The agency has an
+            &quot;I had a fantastic experience with Studyfy! The agency has an
             incredibly helpful and friendly staff. When I sought assistance for
             university enrollment, Kenny and Lenny provided me with exceptional
             support, addressing all of my questions with enthusiasm. These boys
             are not only nice and friendly but also highly professional. I
             highly recommend Studyfy for their outstanding services and
-            dedicated team."
+            dedicated team.&quot;
           </p>
           <p>Gabi Fernandes</p>
         </div>
