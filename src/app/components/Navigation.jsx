@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
@@ -19,7 +19,7 @@ const Navbar = () => {
         height={200}
         className="max-w-full sm:max-w-200"
       />
-      <ul className="hidden lg:flex">
+      <ul className="hidden lg:flex text-blue-800 ">
         <li className="p-4 hover:text-purple-400 duration-500 ">Home</li>
         <li className="p-4 hover:text-purple-400 duration-500">Courses</li>
         <li className="p-4 hover:text-purple-400 duration-500">
@@ -44,8 +44,8 @@ const Navbar = () => {
       <div
         className={
           !nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gradient-to-b from-gray-400 to-blue-500 text-white font-bold ease-in-out duration-500"
-            : "fixed left-[-100%]"
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gradient-to-b from-gray-200 to-blue-800 text-white font-bold ease-in-out duration-500 overflow-hidden"
+            : "fixed left-[-100%] top-0 w-[60%] h-full border-r border-r-gray-900 bg-gradient-to-b from-gray-200 to-blue-800 text-white font-bold ease-in-out duration-500 opacity-0"
         }
       >
         <Image
@@ -72,10 +72,7 @@ const Navbar = () => {
           </li>
           <li className="p-4">
             {" "}
-            <button
-              className="border bg-gradient-to-r from-purple-500 to-red-500 text-white  py-2 px-4 rounded-3xl md:ml-8  hover:bg-indigo-400 
-    duration-500 "
-            >
+            <button className="border bg-gradient-to-r from-purple-500 to-red-500 text-white  py-2 px-4 rounded-3xl  ">
               {" "}
               Apply Now
             </button>{" "}
