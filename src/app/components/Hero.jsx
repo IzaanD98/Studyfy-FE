@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Hero = () => {
   return (
     <div className="bg-gradient-to-b from-blue-900 via-blue-900 to-purple-900">
@@ -27,9 +27,12 @@ const Hero = () => {
               <button className=" bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold py-2 px-4 rounded-3xl  lg:text-sm">
                 Enrol Now
               </button>
-              <button className=" bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl ml-8 lg:text-sm">
-                View all courses
-              </button>
+              <Link
+                className=" ml-10 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm"
+                href="/courses"
+              >
+                View all course
+              </Link>
             </div>
           </div>
         </div>

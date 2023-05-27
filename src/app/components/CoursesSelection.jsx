@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const CoursesSelection = () => {
   return (
@@ -91,9 +92,12 @@ const CoursesSelection = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mt-10">
-        <button className=" border bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
-          View All Courses
-        </button>
+        <Link
+          className=" border bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm"
+          href="/courses"
+        >
+          View all course
+        </Link>
       </div>
     </div>
   );

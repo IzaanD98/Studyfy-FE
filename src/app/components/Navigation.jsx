@@ -14,12 +14,14 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center max-w-[1240px] mx-auto px-4 h-24 font-bold">
-      <Image
-        src={studyfy}
-        width={300}
-        height={200}
-        className="max-w-full sm:max-w-200"
-      />
+      <a href="/">
+        <Image
+          src={studyfy}
+          width={300}
+          height={200}
+          className="max-w-full sm:max-w-200 cursor-pointer"
+        />
+      </a>
       <ul className="hidden lg:flex text-blue-800 ">
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
           <Link href="/">Home</Link>
@@ -47,7 +49,7 @@ const Navbar = () => {
           </button>{" "}
         </li>
       </ul>
-      <div onClick={handleNav} className="block lg:hidden">
+      <div onClick={handleNav} className="block lg:hidden cursor-pointer">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <div
@@ -57,12 +59,14 @@ const Navbar = () => {
             : "fixed left-[-100%] top-0 w-[60%] h-full border-r border-r-gray-900 bg-gradient-to-b from-gray-200 to-blue-800 text-white font-bold ease-in-out duration-500 opacity-0"
         }
       >
-        <Image
-          src={studyfy}
-          width={300}
-          height={200}
-          className="max-w-full sm:max-w-200 rounded-2xl "
-        />
+        <a href="/">
+          <Image
+            src={studyfy}
+            width={300}
+            height={200}
+            className="max-w-full sm:max-w-200 rounded-2xl "
+          />
+        </a>
         <ul className="p-4">
           <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             Home
