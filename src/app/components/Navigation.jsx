@@ -3,6 +3,7 @@ import studyfy from "../../../public/studyfy.png";
 
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Link from "next/link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -21,10 +22,10 @@ const Navbar = () => {
       />
       <ul className="hidden lg:flex text-blue-800 ">
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
-          Home
+          <Link href="/">Home</Link>
         </li>
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
-          Courses
+          <Link href="/courses">Courses</Link>
         </li>
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
           Financial Support

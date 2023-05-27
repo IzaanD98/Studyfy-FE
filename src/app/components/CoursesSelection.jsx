@@ -27,13 +27,13 @@ const CoursesSelection = () => {
             }
           />
           <h2 className="text-2xl font-bold text-left py-5 text-blue-800">
-            BA (HONS) BUSINESS MANAGEMENT WITH FOUNDATION YEAR
+            BA (Hons) Business Management with Foundation Year
           </h2>
           <p className="text-md font-bold text-left pt-5 text-gray-800">
             Duration: <span className="float-right">4 years</span>
           </p>
           <p className="text-md font-bold  text-left pb-5 text-gray-800">
-            Start date: <span className="float-right">Oct, Sept & June</span>
+            Start date: <span className="float-right">March & September</span>
           </p>
           <div className="flex flex-col justify-center items-center">
             <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm ">
@@ -51,13 +51,13 @@ const CoursesSelection = () => {
             }
           />
           <h2 className="text-2xl font-bold text-left py-5 text-blue-800">
-            BSC (HONS) BUSINESS ACCOUNTING WITH FOUNDATION YEAR
+            Certificate in Higher Education in Health and Social Care
           </h2>
           <p className="text-md font-bold text-left pt-5 text-gray-800">
-            Duration: <span className="float-right">4 years</span>
+            Duration: <span className="float-right">9 months</span>
           </p>
           <p className="text-md font-bold  text-left pb-5 text-gray-800">
-            Start date: <span className="float-right">Oct, Sept & June</span>
+            Start date: <span className="float-right">March & September</span>
           </p>
           <div className="flex flex-col justify-center items-center">
             <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm ">
@@ -75,13 +75,13 @@ const CoursesSelection = () => {
             }
           />
           <h2 className="text-2xl font-bold text-left py-5 text-blue-800">
-            BSC (HONS) HEALTH & SOCIAL CARE WITH FOUNDATION YEAR
+            BA (Hons) Business Management
           </h2>
           <p className="text-md font-bold text-left pt-5 text-gray-800">
-            Duration: <span className="float-right">4 years</span>
+            Duration: <span className="float-right">3 years</span>
           </p>
           <p className="text-md font-bold  text-left pb-5 text-gray-800">
-            Start date: <span className="float-right">Oct, Sept & June</span>
+            Start date: <span className="float-right">October</span>
           </p>
           <div className="flex flex-col justify-center items-center">
             <button className=" border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">

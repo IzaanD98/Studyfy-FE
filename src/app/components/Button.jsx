@@ -1,14 +1,17 @@
 import React from "react";
 
-const Button = (props) => {
+const CheckboxButton = ({ prop, isChecked, onChange }) => {
   return (
-    <button
-      className="border bg-gradient-to-r from-purple-500 to-red-500 text-white  py-2 px-4 rounded-3xl md:ml-8  hover:bg-indigo-400 
-    duration-500 lg:text-sm"
-    >
-      {props.children}
-    </button>
+    <label className="inline-flex items-center">
+      <input
+        type="checkbox"
+        className="form-checkbox h-5 w-5 text-blue-500"
+        checked={isChecked}
+        onChange={onChange}
+      />
+      <span className="ml-2">{prop === "Hons" ? "UnderGraduate" : prop}</span>
+    </label>
   );
 };
 
-export default Button;
+export default CheckboxButton;
