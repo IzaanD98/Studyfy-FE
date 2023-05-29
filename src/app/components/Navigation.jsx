@@ -27,13 +27,13 @@ const Navbar = () => {
           <Link href="/">Home</Link>
         </li>
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
+          <Link href="/aboutus">About Us</Link>
+        </li>
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
           <Link href="/courses">Courses</Link>
         </li>
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
           Financial Support
-        </li>
-        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
-          About Us
         </li>
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
           Contact Us
@@ -71,14 +71,14 @@ const Navbar = () => {
           <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             Home
           </li>
-          <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
+          <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
+            <Link href="/aboutus">About Us</Link>
+          </li>
+          <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             <Link href="/courses">Courses</Link>
           </li>
           <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             Financial Support
-          </li>
-          <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
-            About Us
           </li>
           <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             Contact Us
