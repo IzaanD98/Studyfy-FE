@@ -9,7 +9,7 @@ const CheckboxButton = ({ prop, isChecked, onChange }) => {
         checked={isChecked}
         onChange={onChange}
       />
-      <span className="ml-2">{prop === "Hons" ? "UnderGraduate" : prop}</span>
+      <span className="ml-2">{prop === "Hons" ? "Undergraduate" : prop}</span>
     </label>
   );
 };
