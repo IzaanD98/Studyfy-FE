@@ -23,7 +23,7 @@ const Why = () => {
       </div>
 
       <div className="max-w-4xl mx-auto grid grid-cols-2 gap-4">
-        <div className="bg-gray-100 rounded-3xl p-4">
+        <div className="bg-gray-100 rounded-3xl p-4 ">
           <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
             Trending Courses{" "}
           </h2>
@@ -35,8 +35,8 @@ const Why = () => {
         </div>
 
         <div className="bg-gray-100 rounded-3xl p-4 ">
-          <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
-            Free Consultation{" "}
+          <h2 className="text-3xl font-bold text-left py-5 text-blue-800 ">
+            Free Advice{" "}
           </h2>
           <FaHandsHelping size={32} className="text-blue-800" />
           <p className="text-xl text-left py-5 text-gray-800">

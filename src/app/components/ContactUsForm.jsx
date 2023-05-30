@@ -10,7 +10,7 @@ const ContactUsForm = () => {
           <p className="text-lg py-4 mb-5">Fill our contact form below.</p>
         </div>
         <div className="flex flex-col md:flex-row  justify-center mx-5">
-          <div className="bg-gray-400 rounded-l-2xl p-4 text-black mb-6 md:mb-0 ">
+          <div className="bg-gray-300 rounded-l-2xl p-4 text-black mb-6 md:mb-0 ">
             <div className="text-left">
               <h2 className="font-bold text-xl">Address</h2>
               <p className="my-5 border-b border-black">

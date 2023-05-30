@@ -2,14 +2,18 @@ import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import white from "../../../public/white.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-t from-blue-900  via-blue-800 to-white text-white py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-        <div className="flex justify-center md:justify-start items-center">
-          <div style={{ marginTop: "400px" }}>
-            {/* <h3 className="m-5 text-2xl font-bold">Studyfy 2023</h3> */}
+    <>
+      <div
+        className="bg-gradient-to-t from-blue-800  via-blue-600 to-white text-white p-10 -mt-20 -mb-1"
+        style={{ paddingTop: "200px" }}
+      ></div>
+      <footer className="bg-blue-800 text-white py-10">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="max-w-full h-auto">
             <Image src={white} alt="logo" width={400} height={400} />
             <p className="m-5 ">
               We offer support with finding and applying to academic and
@@ -17,13 +21,17 @@ const Footer = () => {
               postgraduate university courses, and give continual support to our
               clients in higher and further education.
             </p>
+            <div className="flex flex-col justify-center items-center ">
+              <button
+                className="bg-gradient-to-r from-red-500 to-gray-500 text-white  py-2 px-4 rounded-3xl hover:bg-indigo-400 
+    duration-500 lg:text-sm whitespace-nowrap"
+              >
+                {" "}
+                Admin Login
+              </button>{" "}
+            </div>
           </div>
-        </div>
-        <div
-          className="flex justify-center md:justify-end items-center"
-          style={{ marginTop: "600px" }}
-        >
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <h3 className="text-lg font-bold mb-2">Follow Us</h3>
             <div className="flex space-x-4">
               <a
@@ -61,16 +69,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
-          {" "}
-          <button
-            className="bg-gradient-to-r from-red-500 to-gray-500 text-white  py-2 px-4 rounded-3xl ml-8  hover:bg-indigo-400 
-    duration-500 lg:text-sm whitespace-nowrap"
-          >
-            {" "}
-            Admin Login
-          </button>{" "}
-        </div>
         <div className="col-span-2 text-center text-gray-400 mt-4">
           <p className="mb-2">Useful information:</p>
           <a href="#" className="text-gray-400 hover:text-white">
@@ -85,9 +83,7 @@ const Footer = () => {
             Cookies Policy
           </a>
           <span className="mx-2">|</span>
-          <a href="#" className="text-gray-400 hover:text-white">
-            Contact
-          </a>
+          <Link href="/contact-us"> Contact Us</Link>
         </div>
 
         <div className="col-span-2 text-center text-gray-400 mt-2">
@@ -103,8 +99,8 @@ const Footer = () => {
             </a>
           </p>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 
