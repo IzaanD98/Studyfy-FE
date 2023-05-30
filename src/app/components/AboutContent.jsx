@@ -1,5 +1,4 @@
 import React from "react";
-
 const AboutContent = () => {
   return (
     <div className="container mx-auto p-5 mt-10">
@@ -10,13 +9,14 @@ const AboutContent = () => {
           </h2>
           <div className="bg-gray-100 rounded-3xl p-4 mt-4">
             <p className="text-lg text-left text-gray-800">
-              Studyfy is an established student recruitment company for UK
-              universities and colleges. We can help you find the right course
-              at the right institution and ensure a quick and secure admission
-              process. Our expertise and contacts will help you achieve your
-              ambitions and career goals. We assist with applications and
-              enrollment for a wide range of courses, from HND to BA/BSc and
-              top-up programs.
+              As a well-established student recruitment company specializing in
+              UK universities and colleges, Studyfy is dedicated to helping you
+              discover the perfect course at the ideal institution. Our goal is
+              to ensure a smooth and secure admission process, leveraging our
+              expertise and extensive network to support your ambitions and
+              career goals. Whether you&apos;re interested in HND, BA/BSc, or
+              top-up programs, we provide comprehensive assistance with
+              applications and enrollment.
             </p>
           </div>
         </div>
@@ -27,11 +27,12 @@ const AboutContent = () => {
           </h2>
           <div className="bg-gray-100 rounded-3xl p-4 mt-4">
             <p className="text-lg text-left text-gray-800">
-              We make studying abroad as seamless as possible, emphasizing a
-              real-world connection to bring the curriculum to life. Our
-              services include support in finding and applying to academic and
-              vocational courses at all levels, including undergraduate and
-              postgraduate programs. Choose us for:
+              At Studyfy, we strive to provide a seamless studying abroad
+              experience, with a strong focus on real-world connections to
+              enhance the curriculum. Our range of services extends to assisting
+              you in finding and applying to academic and vocational courses
+              across all levels, including both undergraduate and postgraduate
+              programs. Choose Studyfy for:
             </p>
             <div>
               <ul className="list-disc mb-4 my-5 mx-5">

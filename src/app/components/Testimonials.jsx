@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Testimonials = () => {
   return (
     <div className="container mx-auto p-5">
@@ -16,11 +16,13 @@ const Testimonials = () => {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="bg-gray-100 rounded-3xl p-4">
-          <img
+          <Image
+            alt="student"
             src={
               "https://images.unsplash.com/photo-1619380916644-8dbef3724106?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
             }
             width={75}
+            height={75}
             className="rounded-3xl"
           />
           <p className="text-xl text-left py-5 text-gray-800">
@@ -36,11 +38,13 @@ const Testimonials = () => {
         </div>
 
         <div className="bg-gray-100 rounded-3xl p-4 ">
-          <img
+          <Image
+            alt="student"
             src={
               "https://images.unsplash.com/photo-1564460576398-ef55d99548b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
             }
             width={75}
+            height={75}
             className="rounded-3xl"
           />
           <p className="text-xl text-left py-5 text-gray-800">
@@ -58,11 +62,13 @@ const Testimonials = () => {
         </div>
 
         <div className="bg-gray-100 rounded-3xl p-4">
-          <img
+          <Image
+            alt="student"
             src={
               "https://images.unsplash.com/photo-1611695434398-4f4b330623e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
             }
             width={75}
+            height={75}
             className="rounded-3xl"
           />
           <p className="text-xl text-left py-5 text-gray-800">
@@ -78,11 +84,13 @@ const Testimonials = () => {
         </div>
 
         <div className="bg-gray-100 rounded-3xl p-4">
-          <img
+          <Image
+            alt="student"
             src={
               "https://images.unsplash.com/photo-1610012525054-b6ab57df6105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
             }
             width={75}
+            height={75}
             className="rounded-3xl"
           />
 

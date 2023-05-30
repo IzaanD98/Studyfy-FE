@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-t from-blue-900  via-blue-800 to-white text-white py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+    <footer className="bg-blue-800 text-white py-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex justify-center md:justify-start items-center">
-          <div style={{ marginTop: "400px" }}>
+          <div>
             {/* <h3 className="m-5 text-2xl font-bold">Studyfy 2023</h3> */}
             <Image src={white} alt="logo" width={400} height={400} />
             <p className="m-5 ">
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div
           className="flex justify-center md:justify-end items-center"
-          style={{ marginTop: "600px" }}
+          style={{ marginTop: "150px" }}
         >
           <div>
             <h3 className="text-lg font-bold mb-2">Follow Us</h3>

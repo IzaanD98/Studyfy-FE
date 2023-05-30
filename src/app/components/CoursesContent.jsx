@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import CheckboxButton from "./Button";
-
+import dghe from "../../../public/DGHE.png";
+import wic from "../../../public/wic-logo.svg";
+import Image from "next/image";
 const CoursesContent = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const courses = [
@@ -108,7 +110,7 @@ const CoursesContent = () => {
         <h1 className="text-5xl py-2 text-blue-800 font-medium">
           Featured Courses
         </h1>
-        <div className="flex justify-center gap-5 my-5">
+        <div className="max-w-6xl mx-auto mt-5 grid grid-cols-1 lg:grid-cols-4 gap-4 place-items-center">
           <CheckboxButton
             prop={"Hons"}
             isChecked={selectedOptions.includes("Hons")}
@@ -134,7 +136,9 @@ const CoursesContent = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4">
         {filteredCourses.map((course) => (
           <div key={course.id} className="bg-gray-100 rounded-lg p-4">
-            <img
+            <Image
+              width={800}
+              height={800}
               className="rounded-3xl"
               alt={course.title}
               src={course.image}
@@ -152,6 +156,10 @@ const CoursesContent = () => {
               <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
                 Read More
               </button>
+            </div>
+            <div className="flex flex-cols items-center justify-between">
+              <Image alt="DGHE" width={100} src={dghe} />
+              <Image alt="WIC" width={75} src={wic} />
             </div>
           </div>
         ))}

@@ -13,36 +13,37 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center max-w-[1240px] mx-auto px-4 h-24 font-bold">
+    <div className="flex justify-center items-center max-w-[1240px] mx-auto px-4 h-24 font-bold">
       <Link href="/">
         <Image
+          alt="studyfy"
           src={studyfy}
           width={300}
           height={200}
           className="max-w-full sm:max-w-200 cursor-pointer"
         />
       </Link>
-      <ul className="hidden lg:flex text-blue-800 ">
+      <ul className="hidden lg:flex text-blue-800 text-xl">
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
           <Link href="/">Home</Link>
         </li>
-        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
-          <Link href="/aboutus">About Us</Link>
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer whitespace-nowrap">
+          <Link href="/about-us">About Us</Link>
         </li>
         <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
           <Link href="/courses">Courses</Link>
         </li>
-        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
-          Financial Support
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer whitespace-nowrap">
+          <Link href="/financial-support"> Financial Support</Link>
         </li>
-        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer">
-          Contact Us
+        <li className="p-4 hover:text-purple-400 duration-500 cursor-pointer whitespace-nowrap">
+          <Link href="/contact-us"> Contact Us</Link>
         </li>
         <li className="p-4">
           {" "}
           <button
             className="border bg-gradient-to-r from-purple-500 to-red-500 text-white  py-2 px-4 rounded-3xl md:ml-8  hover:bg-indigo-400 
-    duration-500 lg:text-sm"
+    duration-500 lg:text-sm whitespace-nowrap"
           >
             {" "}
             Apply Now
@@ -62,6 +63,7 @@ const Navbar = () => {
         <Link href="/">
           <Image
             src={studyfy}
+            alt="studyfy"
             width={300}
             height={200}
             className="max-w-full sm:max-w-200 rounded-2xl "
@@ -72,16 +74,16 @@ const Navbar = () => {
             Home
           </li>
           <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
-            <Link href="/aboutus">About Us</Link>
+            <Link href="/about-us">About Us</Link>
           </li>
           <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
             <Link href="/courses">Courses</Link>
           </li>
           <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
-            Financial Support
+            <Link href="/financial-support"> Financial Support</Link>
           </li>
           <li className="p-4 border-b hover:text-purple-400 duration-500 cursor-pointer">
-            Contact Us
+            <Link href="/contact-us"> Contact Us</Link>
           </li>
           <li className="p-4">
             {" "}
