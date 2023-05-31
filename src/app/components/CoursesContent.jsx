@@ -3,6 +3,7 @@ import CheckboxButton from "./Button";
 import dghe from "../../../public/DGHE.png";
 import wic from "../../../public/wic-logo.svg";
 import Image from "next/image";
+import Link from "next/link";
 const CoursesContent = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const courses = [
@@ -12,7 +13,7 @@ const CoursesContent = () => {
       title: "BA (Hons) Business Management with Foundation Year",
       duration: "4 years",
       start: "March & September",
-      href: "/",
+      href: "/ba-hons-business-management-with-foundation-year",
     },
     {
       image:
@@ -149,17 +150,22 @@ const CoursesContent = () => {
             <p className="text-md font-bold text-left pt-5 text-gray-800">
               Duration: <span className="float-right">{course.duration}</span>
             </p>
-            <p className="text-md font-bold  text-left pb-5 text-gray-800">
+            <p className="text-md font-bold  text-left text-gray-800">
               Start date: <span className="float-right">{course.start}</span>
             </p>
+            <p className="text-md font-bold text-left pb-5 text-gray-800">
+              Funding: <span className="float-right">Fully funded by SFE</span>
+            </p>
             <div className="flex flex-col justify-center items-center">
-              <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
-                Read More
-              </button>
+              <Link href={`courses/${course.href}`}>
+                <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
+                  Read More
+                </button>
+              </Link>
             </div>
             <div className="flex flex-cols items-center justify-between">
               <Image alt="DGHE" width={100} src={dghe} />
-              <Image alt="WIC" width={75} src={wic} />
+              {/* <Image alt="WIC" width={75} src={wic} /> */}
             </div>
           </div>
         ))}

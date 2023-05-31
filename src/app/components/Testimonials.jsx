@@ -4,9 +4,7 @@ const Testimonials = () => {
   return (
     <div className="container mx-auto p-5">
       <div className="text-center mt-10">
-        <h1 className="text-2xl py-2 text-purple-500 font-bold ">
-          Testimonials
-        </h1>
+        <h2 className="text-4xl py-2 text-blue-800 font-bold ">Testimonials</h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-xl py-5 leading-8 text-gray-600">
             Recognized and relied upon by a multitude of students
@@ -23,7 +21,7 @@ const Testimonials = () => {
             }
             width={75}
             height={75}
-            className="rounded-3xl"
+            className="rounded-full"
           />
           <p className="text-xl text-left py-5 text-gray-800">
             &quot;The staff at Studyfy provided invaluable guidance and support
@@ -45,7 +43,7 @@ const Testimonials = () => {
             }
             width={75}
             height={75}
-            className="rounded-3xl"
+            className="rounded-full"
           />
           <p className="text-xl text-left py-5 text-gray-800">
             &quot;A friend recommended Studyfy to me, so I decided to pay them a
@@ -69,7 +67,7 @@ const Testimonials = () => {
             }
             width={75}
             height={75}
-            className="rounded-3xl"
+            className="rounded-full"
           />
           <p className="text-xl text-left py-5 text-gray-800">
             &quot;I had an exceptional experience at Studyfy! The environment
@@ -91,7 +89,7 @@ const Testimonials = () => {
             }
             width={75}
             height={75}
-            className="rounded-3xl"
+            className="rounded-full"
           />
 
           <p className="text-xl text-left py-5 text-gray-800">

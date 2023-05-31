@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="max-w-3xl mx-auto py-20 text-center text-white">
           <p className="text-xl font-bold">Take Control of your Future</p>
           <h1 className="text-4xl md:text-7xl font-bold py-6">
-            Invest in your future with specialized career courses
+            Invest in your future with specialised career courses
           </h1>
           <div className="flex flex-col items-center">
             <p className="text-xl md:text-5xl py-4">

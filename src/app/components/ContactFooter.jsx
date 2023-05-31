@@ -54,7 +54,7 @@ const Footer = () => {
               <FaInstagram size={32} />
             </a>
             <a
-              href="https://www.LinkedIn.com/studyfy"
+              href="https://www.LinkedIn.com/company/studyfy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300"
@@ -89,8 +89,8 @@ const Footer = () => {
           </a>
         </p>
         <p>
-          <a href="mailto:info@avgeducation.com" className="hover:text-white">
-            info@studyfy.com
+          <a href="mailto:studyfy.uk@gmail.com" className="hover:text-white">
+            studyfy.uk@gmail.com
           </a>
         </p>
       </div>

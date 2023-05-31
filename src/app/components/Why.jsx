@@ -10,9 +10,9 @@ const Why = () => {
   return (
     <div className="container mx-auto p-5">
       <div className="text-center mt-10">
-        <h1 className="text-5xl py-2 text-blue-800 font-medium">
+        <h2 className="text-4xl py-2 text-blue-800 font-bold">
           Why choose to study with Studyfy?
-        </h1>
+        </h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-xl py-5 leading-8 text-gray-800">
             We simplify the enrollment and financial processes, allowing
@@ -24,9 +24,9 @@ const Why = () => {
 
       <div className="max-w-4xl mx-auto grid grid-cols-2 gap-4">
         <div className="bg-gray-100 rounded-3xl p-4 ">
-          <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
+          <h3 className="text-3xl font-bold text-left py-5 text-blue-800">
             Trending Courses{" "}
-          </h2>
+          </h3>
           <FaUniversity size={32} className="text-blue-800" />
           <p className="text-xl text-left py-5 text-gray-800">
             Business Management (level 4), Health and Social Care (level 4) and
@@ -35,9 +35,9 @@ const Why = () => {
         </div>
 
         <div className="bg-gray-100 rounded-3xl p-4 ">
-          <h2 className="text-3xl font-bold text-left py-5 text-blue-800 ">
+          <h3 className="text-3xl font-bold text-left py-5 text-blue-800 ">
             Free Advice{" "}
-          </h2>
+          </h3>
           <FaHandsHelping size={32} className="text-blue-800" />
           <p className="text-xl text-left py-5 text-gray-800">
             Assistance with finding and applying to the perfect course for you.
@@ -45,9 +45,9 @@ const Why = () => {
         </div>
 
         <div className="bg-gray-100 rounded-3xl p-4">
-          <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
+          <h3 className="text-3xl font-bold text-left py-5 text-blue-800">
             Student Loans{" "}
-          </h2>
+          </h3>
           <FaMoneyBillWave size={28} className="text-blue-800" />
 
           <p className="text-xl text-left py-5 text-gray-800">
@@ -57,9 +57,9 @@ const Why = () => {
         </div>
 
         <div className="bg-gray-100 rounded-3xl p-4">
-          <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
+          <h3 className="text-3xl font-bold text-left py-5 text-blue-800">
             Institutions{" "}
-          </h2>
+          </h3>
           <FaBuilding size={28} className="text-blue-800" />
 
           <p className="text-xl text-left py-5 text-gray-800">

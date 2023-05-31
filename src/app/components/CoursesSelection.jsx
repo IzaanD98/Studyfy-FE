@@ -7,9 +7,9 @@ const CoursesSelection = () => {
   return (
     <div className="container mx-auto p-5">
       <div className="text-center mt-10">
-        <h1 className="text-5xl py-2 text-blue-800 font-medium">
+        <h2 className="text-4xl py-2 font-bold text-blue-800 ">
           Courses Offered
-        </h1>
+        </h2>
         <div className="max-w-6xl mx-auto">
           <p className="text-xl py-5 leading-8 text-gray-800">
             Looking to pursue your studies in London? Look no further! We offer
@@ -37,17 +37,24 @@ const CoursesSelection = () => {
           <p className="text-md font-bold text-left pt-5 text-gray-800">
             Duration: <span className="float-right">4 years</span>
           </p>
-          <p className="text-md font-bold  text-left pb-5 text-gray-800">
+          <p className="text-md font-bold  text-left  text-gray-800">
             Start date: <span className="float-right">March & September</span>
           </p>
+          <p className="text-md font-bold text-left pb-5 text-gray-800">
+            Funding: <span className="float-right">Fully funded by SFE</span>
+          </p>
           <div className="flex flex-col justify-center items-center">
-            <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm ">
-              Read More
-            </button>
+            <Link
+              href={"courses/ba-hons-business-management-with-foundation-year"}
+            >
+              <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
+                Read More
+              </button>
+            </Link>
           </div>
           <div className="flex flex-cols items-center justify-between">
             <Image alt="DGHE" width={100} src={dghe} />
-            <Image alt="WIC" width={75} src={wic} />
+            {/* <Image alt="WIC" width={75} src={wic} /> */}
           </div>
         </div>
 
@@ -64,11 +71,15 @@ const CoursesSelection = () => {
           <h2 className="text-2xl font-bold text-left py-5 text-blue-800">
             Certificate in Higher Education in Health and Social Care
           </h2>
+
           <p className="text-md font-bold text-left pt-5 text-gray-800">
             Duration: <span className="float-right">9 months</span>
           </p>
-          <p className="text-md font-bold  text-left pb-5 text-gray-800">
+          <p className="text-md font-bold  text-left  text-gray-800">
             Start date: <span className="float-right">March & September</span>
+          </p>
+          <p className="text-md font-bold text-left pb-5 text-gray-800">
+            Funding: <span className="float-right">Fully funded by SFE</span>
           </p>
           <div className="flex flex-col justify-center items-center">
             <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm ">
@@ -77,7 +88,7 @@ const CoursesSelection = () => {
           </div>
           <div className="flex flex-cols items-center justify-between">
             <Image alt="DGHE" width={100} src={dghe} />
-            <Image alt="WIC" width={75} src={wic} />
+            {/* <Image alt="WIC" width={75} src={wic} /> */}
           </div>
         </div>
 
@@ -97,8 +108,11 @@ const CoursesSelection = () => {
           <p className="text-md font-bold text-left pt-5 text-gray-800">
             Duration: <span className="float-right">3 years</span>
           </p>
-          <p className="text-md font-bold  text-left pb-5 text-gray-800">
+          <p className="text-md font-bold  text-left text-gray-800">
             Start date: <span className="float-right">October</span>
+          </p>
+          <p className="text-md font-bold text-left pb-5 text-gray-800">
+            Funding: <span className="float-right">Fully funded by SFE</span>
           </p>
           <div className="flex flex-col justify-center items-center">
             <button className=" border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
@@ -107,7 +121,7 @@ const CoursesSelection = () => {
           </div>
           <div className="flex flex-cols items-center justify-between">
             <Image alt="DGHE" width={100} src={dghe} />
-            <Image alt="WIC" width={75} src={wic} />
+            {/* <Image alt="WIC" width={75} src={wic} /> */}
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Footer = () => {
       ></div>
       <footer className="bg-blue-800 text-white py-10">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="max-w-full h-auto">
+          <div className="max-w-full h-auto relative">
             <Image src={white} alt="logo" width={400} height={400} />
             <p className="m-5 ">
               We offer support with finding and applying to academic and
@@ -59,7 +59,7 @@ const Footer = () => {
                 <FaInstagram size={32} />
               </a>
               <a
-                href="https://www.LinkedIn.com/studyfy"
+                href="https://www.LinkedIn.com/company/studyfy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-300"
@@ -94,8 +94,8 @@ const Footer = () => {
             </a>
           </p>
           <p>
-            <a href="mailto:info@avgeducation.com" className="hover:text-white">
-              info@studyfy.com
+            <a href="mailto:studyfy.uk@gmail.com" className="hover:text-white">
+              studyfy.uk@gmail.com
             </a>
           </p>
         </div>
