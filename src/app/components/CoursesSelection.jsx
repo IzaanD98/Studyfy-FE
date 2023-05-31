@@ -82,9 +82,15 @@ const CoursesSelection = () => {
             Funding: <span className="float-right">Fully funded by SFE</span>
           </p>
           <div className="flex flex-col justify-center items-center">
-            <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm ">
-              Read More
-            </button>
+            <Link
+              href={
+                "courses/certificate-in-higher-education-health-and-social-care"
+              }
+            >
+              <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
+                Read More
+              </button>
+            </Link>
           </div>
           <div className="flex flex-cols items-center justify-between">
             <Image alt="DGHE" width={100} src={dghe} />
@@ -115,9 +121,11 @@ const CoursesSelection = () => {
             Funding: <span className="float-right">Fully funded by SFE</span>
           </p>
           <div className="flex flex-col justify-center items-center">
-            <button className=" border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
-              Read More
-            </button>
+            <Link href={"courses/bsc-hons-health-social-care"}>
+              <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
+                Read More
+              </button>
+            </Link>
           </div>
           <div className="flex flex-cols items-center justify-between">
             <Image alt="DGHE" width={100} src={dghe} />

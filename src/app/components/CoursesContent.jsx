@@ -21,7 +21,7 @@ const CoursesContent = () => {
       title: "Certificate in Higher Education in Health and Social Care",
       duration: "9 months",
       start: "March & September",
-      href: "/",
+      href: "/certificate-in-higher-education-health-and-social-care",
     },
     {
       image:
@@ -29,7 +29,7 @@ const CoursesContent = () => {
       title: "BA (Hons) Business Management",
       duration: "3 years",
       start: "October",
-      href: "/",
+      href: "/ba-hons-business-management",
     },
     {
       image:
@@ -37,7 +37,7 @@ const CoursesContent = () => {
       title: "BSc (Hons) Health and Social Care Leadership and Management",
       duration: "3 years",
       start: "October",
-      href: "/",
+      href: "/bsc-hons-health-social-care",
     },
     {
       image:
@@ -45,7 +45,7 @@ const CoursesContent = () => {
       title: "BTEC Higher National Diploma (HND) Business",
       duration: "2 years",
       start: "Jan, May & Sept",
-      href: "/",
+      href: "/btec-hnd-business",
     },
     {
       image:
@@ -53,7 +53,7 @@ const CoursesContent = () => {
       title: "BTEC Higher National Diploma (HND) Public Services",
       duration: "2 years",
       start: "Jan, May & Sept",
-      href: "/",
+      href: "/btec-hnd-public-service",
     },
     {
       image:
@@ -61,7 +61,7 @@ const CoursesContent = () => {
       title: "BTEC Higher National Diploma (HND) Art & Design",
       duration: "2 years",
       start: "March & October",
-      href: "/",
+      href: "/higher-national-diploma-art-design",
     },
     {
       image:
@@ -69,7 +69,7 @@ const CoursesContent = () => {
       title: "BA (Hons) Business Management (Top-Up)",
       duration: "1 year",
       start: "March & October",
-      href: "/",
+      href: "/ba-hons-business-management-top-up",
     },
     {
       image:
@@ -77,7 +77,7 @@ const CoursesContent = () => {
       title: "BSc (Hons) Criminology and Criminal Justice (Top-up)",
       duration: "1 year",
       start: "March & October",
-      href: "/",
+      href: "/bsc-criminology-and-criminal-justice",
     },
     {
       image:
@@ -85,7 +85,7 @@ const CoursesContent = () => {
       title: "BA (Hons) Visual Communication (Top-Up)",
       duration: "1 year",
       start: "March & October",
-      href: "/",
+      href: "/ba-hons-visual-communication",
     },
   ];
 
@@ -157,7 +157,7 @@ const CoursesContent = () => {
               Funding: <span className="float-right">Fully funded by SFE</span>
             </p>
             <div className="flex flex-col justify-center items-center">
-              <Link href={`courses/${course.href}`}>
+              <Link href={`courses${course.href}`}>
                 <button className="border bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm">
                   Read More
                 </button>

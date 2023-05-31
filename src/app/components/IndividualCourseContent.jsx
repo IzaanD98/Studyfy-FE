@@ -12,7 +12,7 @@ const IndividualCourseContent = (course) => {
     <div className="container mx-auto p-5 mt-10">
       <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-1 gap-8">
         <div className="flex flex-col justify-center items-center">
-          <Image src={dghe} width={150} height={150} />
+          <Image alt="DGHE" src={dghe} width={150} height={150} />
         </div>
         <div className="p-4">
           <h2 className="text-3xl font-bold text-left py-5 text-blue-800">
