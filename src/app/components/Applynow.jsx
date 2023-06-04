@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import Popup from "reactjs-popup";
 require("dotenv").config();
 
-const ContactUsForm = () => {
+const Applynow = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,7 +29,7 @@ const ContactUsForm = () => {
     emailjs
       .send(
         "service_y8jjqhx",
-        "template_uyn7ann",
+        "template_sbdxc2n",
         formData,
         process.env.USER_PASSWORD
       )
@@ -54,6 +54,7 @@ const ContactUsForm = () => {
   const closePopup = () => {
     setIsSent(false);
   };
+
   return (
     <div className="bg-gradient-to-b from-red-900 via-purple-900 to-blue-800 min-h-screen">
       <Popup
@@ -80,73 +81,60 @@ const ContactUsForm = () => {
         </div>
       </Popup>
       <div className="max-w-5xl mx-auto py-20 text-center text-white">
-        <h1 className="text-4xl md:text-7xl font-bold py-6">Contact Us</h1>
+        <h1 className="text-4xl md:text-7xl font-bold py-6">Apply Now</h1>
         <div className="flex flex-col items-center">
-          <p className="text-lg py-4 mb-5">Fill our contact form below.</p>
+          <p className="text-lg py-4 mb-5">Fill our application form below.</p>
         </div>
         <div className="flex flex-col md:flex-row  justify-center mx-5">
-          <div className="bg-gray-300 rounded-l-2xl p-4 text-black mb-6 md:mb-0 ">
+          <div className="bg-gray-300 rounded-l-2xl p-4 text-black mb-6 md:mb-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
             <div className="text-left">
-              <h2 className="font-bold text-xl">Address</h2>
+              <h2 className="font-bold text-xl">Step 1</h2>
               <p className="my-5 pb-5 border-b border-black">
-                Flat 999, 9 Beck Road Southford, London – Postal code: IG11 6RR
+                Enter your details to be contacted for an eligibility check
               </p>
             </div>
             <div className="text-left">
-              <h2 className="font-bold text-xl">Call us</h2>
+              <h2 className="font-bold text-xl">Step 2</h2>
               <p className="my-5 pb-5 border-b border-black">
-                (+44) 7123 234 567
+                You will be contacted by phone by our student advisor to decide
+                the best option for student. You will also receive more
+                information about the chosen course and institution.
               </p>
             </div>
             <div className="text-left">
-              <h2 className="font-bold text-xl">Email Us</h2>
+              <h2 className="font-bold text-xl">Step 3</h2>
               <p className="my-5 pb-5 border-b border-black">
-                <a
-                  href="mailto:studyfy.uk@gmail.com"
-                  className="hover:text-white"
-                >
-                  studyfy.uk@gmail.com
-                </a>
+                After deciding the institution, you will need to provide your
+                documents to the agency in order to progress with your
+                application.
               </p>
             </div>
-            <div>
-              <h3 className="text-left font-bold mb-2 text-xl">Follow Us</h3>
-              <div className="flex space-x-4 my-5 ">
-                <a
-                  href="https://www.facebook.com/studyfy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black hover:text-gray-300"
-                >
-                  <FaFacebook size={32} />
-                </a>
-                <a
-                  href="https://www.twitter.com/studyfy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black hover:text-gray-300"
-                >
-                  <FaTwitter size={32} />
-                </a>
-                <a
-                  href="https://www.instagram.com/studyfy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black hover:text-gray-300"
-                >
-                  <FaInstagram size={32} />
-                </a>
-                <a
-                  href="https://www.LinkedIn.com/company/studyfy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black hover:text-gray-300"
-                >
-                  <FaLinkedin size={32} />
-                </a>
-              </div>
+            <div className="text-left">
+              <h2 className="font-bold text-xl">Step 4</h2>
+              <p className="my-5 pb-5 border-b border-black">
+                After receiving the requested documents, the admissions team
+                will submit your application to the University, and you will
+                receive our support for the english test.
+              </p>
+            </div>
+            <div className="text-left">
+              <h2 className="font-bold text-xl">Step 5</h2>
+              <p className="my-5 pb-5 border-b border-black">
+                After booking and completing your english test, you will receive
+                a confirmation of acceptance and will need to complete a student
+                finance application.
+              </p>
+            </div>
+            <div className="text-left">
+              <h2 className="font-bold text-xl">Step 6</h2>
+              <p className="my-5 pb-5">
+                After being admitted to the University the student will need to
+                wait to receive all information regarding the course which will
+                include timetable, induction times and enrolment information
+              </p>
             </div>
           </div>
+
           <div className="bg-gray-200 rounded-r-2xl p-4 ">
             <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
               <div className="mb-4">
@@ -207,7 +195,8 @@ const ContactUsForm = () => {
                   htmlFor="message"
                   className="block mb-2 font-bold text-xl text-gray-800 text-left"
                 >
-                  Message <span className="text-red-900">*</span>
+                  Which course are you interested?{" "}
+                  <span className="text-red-900">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -259,4 +248,4 @@ const ContactUsForm = () => {
   );
 };
 
-export default ContactUsForm;
+export default Applynow;

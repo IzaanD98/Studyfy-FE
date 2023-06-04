@@ -24,8 +24,12 @@ const Hero = () => {
               tomorrow.
             </p>
             <div className="mt-10">
-              <button className=" bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold py-2 px-4 rounded-3xl  lg:text-sm">
-                Enrol Now
+              <button
+                className="font-bold  bg-gradient-to-r from-purple-500 to-red-500 text-white  py-2 px-4 rounded-3xl md:ml-8  hover:bg-indigo-400 
+    duration-500 lg:text-sm whitespace-nowrap"
+              >
+                {" "}
+                <Link href="/apply-now"> Enrol Now</Link>
               </button>
               <Link
                 className=" ml-10 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl lg:text-sm"
