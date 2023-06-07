@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Studyfy
 
-## Getting Started
+Link to live version : studyfy.co.uk
 
-First, run the development server:
+Studyfy is an recruitment website that provides a wide range of courses and resources for students. It offers a seamless learning experience with interactive content and personalized study plans.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- React: A JavaScript library for building user interfaces.
+- Next.js: A framework for server-side rendered React applications.
+- Tailwind CSS: A utility-first CSS framework for quickly styling web applications.
+- Next.js Image: A plugin for Next.js that enables optimized image loading and resizing.
+- React Router: A library for routing in React applications.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository: `git clone https://github.com/your-username/studyfy.git`
+2. Navigate to the project directory: `cd studyfy`
+3. Install dependencies: `npm install`
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+1. Set up the required environment variables for the project.
+2. Start the development server: `npm run dev`
+3. Access the Studyfy application at `http://localhost:3000`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Browse and search for courses in various disciplines.
+- View detailed information about each course, including duration, start dates, and modules.
+- Enroll in courses and track progress.
+- Access supplementary learning materials, such as videos, quizzes, and assignments.
+- Communicate with instructors and fellow learners through discussion forums.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We welcome contributions from the community! If you would like to contribute to Studyfy, please follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and commit them: `git commit -m 'Add your feature description'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Submit a pull request.
+
+Please ensure that your code follows our coding guidelines and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out to our team at contact@studyfy.com.
+
+---
+
+Feel free to customize this README file based on your specific project needs. Include any additional sections or information that would be helpful for users or contributors.
