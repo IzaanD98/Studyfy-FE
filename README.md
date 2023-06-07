@@ -1,6 +1,6 @@
 # Studyfy
 
-Link to live version : studyfy.co.uk
+Link to live version : [https://studyfy.co.uk/](https://studyfy.co.uk/)
 
 Studyfy is an recruitment website that provides a wide range of courses and resources for students. It offers a seamless learning experience with interactive content and personalized study plans.
 
