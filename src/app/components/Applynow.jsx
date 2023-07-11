@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import emailjs from "emailjs-com";
 import Popup from "reactjs-popup";
+import { postApplicant } from "../utils/api";
 require("dotenv").config();
 
 const Applynow = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    surname: "",
     email: "",
-    phone: "",
-    message: "",
+    phoneNumber: "",
+    course: "",
     agreeToGDPR: false,
   });
   const [isSent, setIsSent] = useState(false);
@@ -26,27 +27,21 @@ const Applynow = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    emailjs
-      .send(
-        "service_y8jjqhx",
-        "template_sbdxc2n",
-        formData,
-        process.env.USER_PASSWORD
-      )
-      .then(
-        (result) => {
-          setIsSent(true);
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    console.log(formData);
+    postApplicant(formData)
+      .then((response) => {
+        setIsSent(true);
+        console.log("Applicant submitted:", response);
+      })
+      .catch((error) => {
+        console.log("Error submitting applicant:", error);
+      });
     setFormData({
-      name: "",
+      firstName: "",
+      surname: "",
       email: "",
-      phone: "",
-      message: "",
+      phoneNumber: "",
+      course: "",
       agreeToGDPR: false,
     });
   };
@@ -71,7 +66,7 @@ const Applynow = () => {
       >
         <div className="bg-green-500 text-white font-bold p-5 rounded">
           <h1>Success</h1>
-          <p>Your message has been sent successfully.</p>
+          <p>Your application has been sent successfully.</p>
           <button
             onClick={closePopup}
             className="mt-4 bg-white text-green-500 px-4 py-2 rounded"
@@ -142,13 +137,30 @@ const Applynow = () => {
                   htmlFor="name"
                   className="block mb-2 font-bold text-gray-800 text-xl text-left"
                 >
-                  Name <span className="text-red-900">*</span>
+                  First Name <span className="text-red-900">*</span>
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
+                  id="firstName"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border rounded text-black"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label
+                  htmlFor="name"
+                  className="block mb-2 font-bold text-gray-800 text-xl text-left"
+                >
+                  Surname <span className="text-red-900">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  value={formData.surname}
                   onChange={handleChange}
                   className="w-full px-3 py-2 border rounded text-black"
                   required
@@ -177,15 +189,15 @@ const Applynow = () => {
                   htmlFor="phone"
                   className="block mb-2 font-bold text-gray-800 text-xl text-left"
                 >
-                  Phone Number <span className="text-red-900">*</span>
+                  Phone Number (+44)<span className="text-red-900">*</span>
                 </label>
                 <input
                   type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
                   onChange={handleChange}
-                  pattern="[0-9]{11}"
+                  pattern="^44\d{10}$"
                   className="w-full px-3 py-2 border rounded text-black"
                   required
                 />
@@ -199,9 +211,9 @@ const Applynow = () => {
                   <span className="text-red-900">*</span>
                 </label>
                 <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
+                  id="course"
+                  name="course"
+                  value={formData.course}
                   onChange={handleChange}
                   className="w-full px-3 py-2 border rounded text-black"
                   required
