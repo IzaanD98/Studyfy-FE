@@ -14,12 +14,8 @@ const AdminLogin = ({ authenticated }) => {
 
     if (username === process.env.ADMIN && password === process.env.PASSWORD) {
       localStorage.setItem("isAdminLoggedIn", true);
-      console.log(username, process.env.ADMIN);
-      console.log(password, process.env.PASSWORD);
       router.push("/applicants");
     } else {
-      console.log(username, process.env.ADMIN);
-      console.log(password, process.env.PASSWORD);
       setErrorMessage("Invalid username or password");
     }
   };
