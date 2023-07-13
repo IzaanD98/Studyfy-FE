@@ -4,7 +4,7 @@ import Head from "next/head";
 
 import AdminLogin from "@/app/components/AdminLogin";
 
-export default function Home() {
+export default function Home({ authenticated, setAuthenticated }) {
   return (
     <div>
       <Head>
@@ -14,7 +14,10 @@ export default function Home() {
       <main>
         <section>
           <Navbar />
-          <AdminLogin />
+          <AdminLogin
+            authenticated={authenticated}
+            setAuthenticated={setAuthenticated}
+          />
         </section>
       </main>
     </div>

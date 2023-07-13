@@ -1,11 +1,9 @@
 import React from "react";
 import Navbar from "../src/app/components/Navigation";
 import Head from "next/head";
+import Applicants from "@/app/components/Applicants";
 
-import Footer from "../src/app/components/Footer";
-import AboutHero from "@/app/components/AboutHero";
-import AboutContent from "@/app/components/AboutContent";
-export default function Home() {
+export default function Home({ authenticated }) {
   return (
     <div>
       <Head>
@@ -15,9 +13,7 @@ export default function Home() {
       <main>
         <section>
           <Navbar />
-          <AboutHero />
-          <AboutContent />
-          <Footer />
+          <Applicants authenticated={authenticated} />
         </section>
       </main>
     </div>

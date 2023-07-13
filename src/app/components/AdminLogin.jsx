@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 require("dotenv").config();
 
-const AdminLogin = () => {
+const AdminLogin = ({ authenticated }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -14,13 +14,13 @@ const AdminLogin = () => {
 
     if (username === process.env.ADMIN && password === process.env.PASSWORD) {
       localStorage.setItem("isAdminLoggedIn", true);
-
+      console.log(authenticated);
       router.push("/applicants");
     } else {
+      console.log(localStorage);
       setErrorMessage("Invalid username or password");
     }
   };
-
   return (
     <div className="bg-gray-200 flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mb-8">Admin Login</h1>
