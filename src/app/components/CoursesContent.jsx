@@ -8,6 +8,7 @@ const CoursesContent = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const courses = [
     {
+      id: 1,
       image:
         "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       title: "BA (Hons) Business Management with Foundation Year",
@@ -16,6 +17,7 @@ const CoursesContent = () => {
       href: "/ba-hons-business-management-with-foundation-year",
     },
     {
+      id: 2,
       image:
         "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       title: "Certificate in Higher Education in Health and Social Care",
@@ -24,6 +26,7 @@ const CoursesContent = () => {
       href: "/certificate-in-higher-education-health-and-social-care",
     },
     {
+      id: 3,
       image:
         "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       title: "BA (Hons) Business Management",
@@ -32,6 +35,7 @@ const CoursesContent = () => {
       href: "/ba-hons-business-management",
     },
     {
+      id: 4,
       image:
         "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3R1ZGVudHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
       title: "BSc (Hons) Health and Social Care Leadership and Management",
@@ -40,6 +44,7 @@ const CoursesContent = () => {
       href: "/bsc-hons-health-social-care",
     },
     {
+      id: 5,
       image:
         "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3R1ZGVudHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
       title: "BTEC Higher National Diploma (HND) Business",
@@ -48,6 +53,7 @@ const CoursesContent = () => {
       href: "/btec-hnd-business",
     },
     {
+      id: 6,
       image:
         "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHN0dWRlbnRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
       title: "BTEC Higher National Diploma (HND) Public Services",
@@ -56,6 +62,7 @@ const CoursesContent = () => {
       href: "/btec-hnd-public-service",
     },
     {
+      id: 7,
       image:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0dWRlbnRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
       title: "BTEC Higher National Diploma (HND) Art & Design",
@@ -64,6 +71,7 @@ const CoursesContent = () => {
       href: "/higher-national-diploma-art-design",
     },
     {
+      id: 8,
       image:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHN0dWRlbnRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
       title: "BA (Hons) Business Management (Top-Up)",
@@ -72,6 +80,7 @@ const CoursesContent = () => {
       href: "/ba-hons-business-management-top-up",
     },
     {
+      id: 9,
       image:
         "https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
       title: "BSc (Hons) Criminology and Criminal Justice (Top-up)",
@@ -80,6 +89,7 @@ const CoursesContent = () => {
       href: "/bsc-criminology-and-criminal-justice",
     },
     {
+      id: 10,
       image:
         "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
       title: "BA (Hons) Visual Communication (Top-Up)",

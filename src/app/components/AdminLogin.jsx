@@ -8,16 +8,11 @@ const AdminLogin = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const router = useRouter();
-  console.log(process.env.PASSWORD);
+
   const handleLogin = (event) => {
     event.preventDefault();
 
-    // Hardcoded admin credentials
-
-    if (
-      username === process.env.Admin_Username &&
-      password === process.env.Admin_Password
-    ) {
+    if (username === process.env.ADMIN && password === process.env.PASSWORD) {
       localStorage.setItem("isAdminLoggedIn", true);
 
       router.push("/applicants");
@@ -29,7 +24,7 @@ const AdminLogin = () => {
   return (
     <div className="bg-gray-200 flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mb-8">Admin Login</h1>
-      <form className="w-64">
+      <form className="w-64" onSubmit={handleLogin}>
         <div className="mb-4">
           <label className="text-lg">Username:</label>
           <input
@@ -54,7 +49,9 @@ const AdminLogin = () => {
         >
           Login
         </button>
-        {errorMessage && <p>{errorMessage}</p>}
+        {errorMessage && (
+          <p className="font-bold text-red-500	">{errorMessage}</p>
+        )}
       </form>
     </div>
   );

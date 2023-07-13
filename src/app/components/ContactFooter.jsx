@@ -17,13 +17,14 @@ const Footer = () => {
             clients in higher and further education.
           </p>
           <div className="flex flex-col justify-center items-center ">
-            <button
+            <Link
+              href="/admin-login"
               className="bg-gradient-to-r from-red-500 to-gray-500 text-white  py-2 px-4 rounded-3xl hover:bg-indigo-400 
     duration-500 lg:text-sm whitespace-nowrap"
             >
               {" "}
               Admin Login
-            </button>{" "}
+            </Link>{" "}
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">

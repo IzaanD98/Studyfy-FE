@@ -5,6 +5,18 @@ import { postApplicant } from "../utils/api";
 require("dotenv").config();
 
 const Applynow = () => {
+  const courseTitles = [
+    "BA (Hons) Business Management with Foundation Year",
+    "Certificate in Higher Education Health and Social Care",
+    "Higher National Diploma in Art & Design",
+    "BTEC HND Public Services",
+    "BTEC HND Business",
+    "BSc (Hons) Health and Social Care Leadership and Management",
+    "BA (Hons) Business Management",
+    "BA (Hons) Visual Communication (Top-Up)",
+    "BSc (Hons) Criminology and Criminal Justice (Top-up)",
+    "BA (Hons) Business Management (Top-Up)",
+  ];
   const [formData, setFormData] = useState({
     firstName: "",
     surname: "",
@@ -17,7 +29,11 @@ const Applynow = () => {
 
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
-    const fieldValue = type === "checkbox" ? checked : value;
+    let fieldValue = type === "checkbox" ? checked : value;
+
+    if (name === "phoneNumber" && !fieldValue.startsWith("+44")) {
+      fieldValue = "+44" + fieldValue;
+    }
 
     setFormData((prevData) => ({
       ...prevData,
@@ -27,10 +43,9 @@ const Applynow = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData);
+    setIsSent(true);
     postApplicant(formData)
       .then((response) => {
-        setIsSent(true);
         console.log("Applicant submitted:", response);
       })
       .catch((error) => {
@@ -145,6 +160,7 @@ const Applynow = () => {
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
+                  pattern="[A-Za-z]+"
                   className="w-full px-3 py-2 border rounded text-black"
                   required
                 />
@@ -162,6 +178,7 @@ const Applynow = () => {
                   name="surname"
                   value={formData.surname}
                   onChange={handleChange}
+                  pattern="[A-Za-z]+"
                   className="w-full px-3 py-2 border rounded text-black"
                   required
                 />
@@ -186,10 +203,10 @@ const Applynow = () => {
               </div>
               <div className="mb-4">
                 <label
-                  htmlFor="phone"
-                  className="block mb-2 font-bold text-gray-800 text-xl text-left"
+                  htmlFor="phoneNumber"
+                  className="block mb-2 font-bold  text-gray-800 text-xl text-left"
                 >
-                  Phone Number (+44)<span className="text-red-900">*</span>
+                  Phone Number (+44) <span className="text-red-900">*</span>
                 </label>
                 <input
                   type="tel"
@@ -197,27 +214,35 @@ const Applynow = () => {
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleChange}
-                  pattern="^44\d{10}$"
+                  pattern="\+\d{12}"
                   className="w-full px-3 py-2 border rounded text-black"
                   required
                 />
               </div>
               <div className="mb-4">
                 <label
-                  htmlFor="message"
+                  htmlFor="course"
                   className="block mb-2 font-bold text-xl text-gray-800 text-left"
                 >
                   Which course are you interested?{" "}
                   <span className="text-red-900">*</span>
                 </label>
-                <textarea
+                <select
                   id="course"
                   name="course"
                   value={formData.course}
                   onChange={handleChange}
                   className="w-full px-3 py-2 border rounded text-black"
                   required
-                ></textarea>
+                >
+                  <option value="">Select a course</option>
+                  {courseTitles.map((course, index) => (
+                    <option key={index} value={course}>
+                      {" "}
+                      {course}
+                    </option>
+                  ))}
+                </select>
               </div>
               <h2 className="text-gray-800 font-bold text-xl text-left mb-5">
                 GDPR <span className="text-red-900">*</span>
