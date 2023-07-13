@@ -12,11 +12,7 @@ const AdminLogin = ({ authenticated }) => {
   const handleLogin = (event) => {
     event.preventDefault();
 
-    if (
-      username === process.env.ADMIN &&
-      password === process.env.PASSWORD &&
-      !authenticated
-    ) {
+    if (username === process.env.ADMIN && password === process.env.PASSWORD) {
       localStorage.setItem("isAdminLoggedIn", true);
       router.push("/applicants");
     } else {
@@ -26,7 +22,7 @@ const AdminLogin = ({ authenticated }) => {
   return (
     <div className="bg-gray-200 flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mb-8">Admin Login</h1>
-      <form className="w-64">
+      <form className="w-64" onClick={handleLogin}>
         <div className="mb-4">
           <label className="text-lg">Username:</label>
           <input
@@ -46,8 +42,7 @@ const AdminLogin = ({ authenticated }) => {
           />
         </div>
         <button
-          type="button"
-          onClick={handleLogin}
+          type="submit"
           className="bg-gradient-to-r from-red-500 to-purple-500  text-white font-bold mb-2 py-2 px-4 rounded"
         >
           Login
