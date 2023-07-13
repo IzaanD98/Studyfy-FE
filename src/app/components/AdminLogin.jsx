@@ -12,7 +12,11 @@ const AdminLogin = ({ authenticated }) => {
   const handleLogin = (event) => {
     event.preventDefault();
 
-    if (username === process.env.ADMIN && password === process.env.PASSWORD) {
+    if (
+      username === process.env.ADMIN &&
+      password === process.env.PASSWORD &&
+      !authenticated
+    ) {
       localStorage.setItem("isAdminLoggedIn", true);
       router.push("/applicants");
     } else {
