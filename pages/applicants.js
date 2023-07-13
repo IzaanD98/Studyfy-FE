@@ -12,8 +12,10 @@ export default function Home({ authenticated }) {
       </Head>
       <main>
         <section>
-          <Navbar />
-          <Applicants authenticated={authenticated} />
+          <div>
+            <Navbar />
+            <Applicants authenticated={authenticated} />
+          </div>
         </section>
       </main>
     </div>

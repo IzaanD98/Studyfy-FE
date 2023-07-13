@@ -22,7 +22,7 @@ const AdminLogin = ({ authenticated }) => {
   return (
     <div className="bg-gray-200 flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mb-8">Admin Login</h1>
-      <form className="w-64" onSubmit={handleLogin}>
+      <form className="w-64">
         <div className="mb-4">
           <label className="text-lg">Username:</label>
           <input
@@ -42,7 +42,8 @@ const AdminLogin = ({ authenticated }) => {
           />
         </div>
         <button
-          type="submit"
+          type="button"
+          onClick={handleLogin}
           className="bg-gradient-to-r from-red-500 to-purple-500  text-white font-bold mb-2 py-2 px-4 rounded"
         >
           Login

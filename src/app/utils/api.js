@@ -6,7 +6,7 @@ const applicantAPI = axios.create({
 
 export const allApplicants = () => {
   return applicantAPI.get(`/applicants`).then(({ data }) => {
-    return data.applicants;
+    return data;
   });
 };
 
