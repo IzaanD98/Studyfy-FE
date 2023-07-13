@@ -22,7 +22,7 @@ const AdminLogin = ({ authenticated }) => {
   return (
     <div className="bg-gray-200 flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mb-8">Admin Login</h1>
-      <form className="w-64" onClick={handleLogin}>
+      <form className="w-64" onSubmit={handleLogin}>
         <div className="mb-4">
           <label className="text-lg">Username:</label>
           <input
