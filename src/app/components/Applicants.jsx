@@ -9,7 +9,8 @@ const Applicants = ({ authenticated }) => {
 
   useEffect(() => {
     if (typeof window !== "undefined" && !authenticated) {
-      // Redirect to login page if not authenticated
+      // Redirect to login page if not authenticated]
+
       router.push("/admin-login");
     } else {
       fetchApplicants();
@@ -26,10 +27,6 @@ const Applicants = ({ authenticated }) => {
       setLoading(false);
     }
   };
-
-  if (!authenticated) {
-    return null;
-  }
 
   return (
     <div>
@@ -53,7 +50,7 @@ const Applicants = ({ authenticated }) => {
                 </thead>
                 <tbody>
                   {applicants.map((applicant, index) => (
-                    <tr className="border" key={applicant.id}>
+                    <tr className="border" key={index}>
                       <td className="px-4 py-2 border">
                         {applicant.referenceNumber}
                       </td>
